@@ -1,6 +1,7 @@
 import '../../styles/hero.css'
 import '../../styles/header.css'
 import HolyGptModal from '../modal/holyGptModal'
+import CustomHolyGptModal from '../modal/customHolyGptModal'
 
 export default function CenteredHero() {
 
@@ -13,12 +14,13 @@ export default function CenteredHero() {
                     <p id="centered-hero-text" class="lead mb-4">Experience personalized Bible lessons with HolyGPT, your AI companion for spiritual growth.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <button id="action-button-1" type="button" class="gap-3" data-bs-toggle="modal" data-bs-target="#holyGptModal">Explore Now</button>
-                        <button id="action-header-button" type="button" class="">Custom HolyGpt</button>
+                        <button id="action-header-button" type="button" data-bs-toggle="modal" data-bs-target="#customHolyGptModal">Custom HolyGpt</button>
                     </div>
                 </div>
             </div>
 
             <HolyGptModal />
+            <CustomHolyGptModal />
         </>
 
     )
