@@ -1,3 +1,11 @@
+import '../..//styles/header.css'
+import { GiCrossedAirFlows, GiIronCross, GiHospitalCross } from "react-icons/gi";
+import { FaCross } from "react-icons/fa";
+import { GiJerusalemCross } from "react-icons/gi";
+import { BrowserView, MobileView } from 'react-device-detect';
+
+
+
 export default function HolyHeader() {
 
     return (
@@ -6,35 +14,27 @@ export default function HolyHeader() {
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container px-5 mt-4">
-                    <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarButtonsExample"
-                        aria-expanded="false" >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <BrowserView>
+                        <a id="text-heading" class="nav-link" aria-current="page" href="#">Holy~GPT</a>
+                    </BrowserView>
                     <a class="navbar-brand" href="#">
-                        <img src="/images/bootstrap-logo.svg" width="36" />
+                        <GiCrossedAirFlows style={{ fontSize: "35px" }} />
                     </a>
                     <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Dashboard</a>
-                            </li>
-                        </ul>
+                        <MobileView>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a id="text-heading" class="nav-link" aria-current="page" href="#">Holy~GPT</a>
+                                </li>
+                            </ul>
+                        </MobileView>
                         <div class="d-flex align-items-center ms-auto">
-                            <button type="button" class="btn btn-default px-3 me-2">
-                                Login
+                            <button id="action-header-button" type="button" class="me-3">
+                                <span className='me-2'><GiHospitalCross /></span>
+                                <span className='me-2'><FaCross /></span>
+                                <span className='me-2'><GiIronCross /></span>
+                                <span className='me-2'><GiJerusalemCross /></span>
                             </button>
-                            <button type="button" class="btn btn-primary me-3">
-                                Sign up for free
-                            </button>
-                            <a
-                                class="btn btn-subtle px-3"
-                                href="https://github.com/mdbootstrap/mdb-ui-kit"
-                                role="button"
-                            ><i class="fab fa-github"></i
-                            ></a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,26 @@
+#centered-hero-text-header {
+  color: #1e1d1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52px; /* 108.333% */
+}
+
+#centered-hero-text {
+  color: #787579;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Paragraph/Medium/Regular */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#action-button-1 {
+  padding: 16px 18px;
+  border-radius: 6px;
+  background: #1e1d1f;
+  color:white
+}

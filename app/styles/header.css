@@ -1,10 +1,16 @@
-.text-heading {
+#text-heading {
   color: #1a1a1a;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Outfit;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 3.36px;
+}
+
+#action-header-button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 2px solid #6a57c9;
+  background-color: transparent;
 }
