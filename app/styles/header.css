@@ -1,0 +1,10 @@
+.text-heading {
+  color: #1a1a1a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Outfit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.36px;
+}
